@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp">
+
+        <!-- TITLE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nimma Guru"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#2E7D32"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guru - Shishya Learning Platform"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- IMAGE -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/gurukula"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 🟢 CAPTION UNDER IMAGE (ADDED HERE) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Nimma Guru App. This platform connects Gurus and Students in a traditional learning environment inspired by Gurukula system .This platform promotes Gyaan-Daan,empowering retirees to contribute to nation-building through education."
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- DESCRIPTION -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- BUTTONS -->
+
+        <Button
+            android:id="@+id/registerGuruBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register Guru"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/guruLoginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guru Login"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/viewGuruBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Gurus"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#FF9800"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/pollBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student Interest Poll"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#9C27B0"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+</ScrollView>
